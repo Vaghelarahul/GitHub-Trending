@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/github_trending_nav_graph" app:startDestination="@id/trendingListFragment">
+
+    <fragment android:id="@+id/trendingListFragment"
+              android:name="com.droidapps.task.githubtrending.trendinglist.TrendingListFragment"
+              android:label="Trending Repos"
+              tools:layout="@layout/fragment_trending_list">
+        <action android:id="@+id/action_trendingListFragment_to_trendingItemDetail"
+                app:destination="@id/trendingItemDetail"/>
+    </fragment>
+
+
+    <fragment android:id="@+id/trendingItemDetail"
+              android:name="com.droidapps.task.githubtrending.details.TrendingDetail"
+              android:label="Repo Details"
+              tools:layout="@layout/fragment_trending_detail">
+        <action android:id="@+id/action_trendingItemDetail_to_trendingListFragment"
+                app:destination="@id/trendingListFragment" app:popUpTo="@id/trendingListFragment"/>
+        <argument android:name="trending" app:argType="com.droidapps.task.githubtrending.network.Trending"/>
+    </fragment>
+
+</navigation>

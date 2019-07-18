@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Top GitHub</string>
+    <string name="repository_details">Repo Details</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="user_name">User Name</string>
+    <string name="profile_url">Profile Url</string>
+    <string name="repo_name">Repo Name</string>
+    <string name="repo_url">Repo Url</string>
+    <string name="repo_description">Repo Description</string>
+    <string name="empty_msg">Repo list not available</string>
+</resources>
